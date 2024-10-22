@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  color: chocolate;
 }
 /* Navbar */
 .navbar {
@@ -22,23 +23,11 @@ body {
   border-radius: 50%;
 }
 
-.navbar > nav {
-  display: none;
-}
-
 .navbar > nav > ul {
-  display: flex;
-  gap: 7px;
   list-style: none;
-  justify-content: center;
-  align-items: center;
 }
 
 .navbar > nav > ul > li > a {
-  font-size: 25px;
-  font-weight: 800;
-  padding-inline: 20px;
-  padding-block: 10px;
   text-decoration: none;
   border-radius: 5px;
   background-color: azure;
@@ -50,7 +39,7 @@ body {
 
 /* Hero */
 .hero {
-  background-image: url("./hero.jpg");
+  background-image: url("../hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,7 +50,7 @@ body {
 
 .hero > div {
   font-size: 2em;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-left: 50px;
 }
 
@@ -137,7 +126,19 @@ footer {
 }
 
 @media (min-width: 768px) {
-} */
+  .navbar > nav > ul {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar > nav > ul > li > a {
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-size: 25px;
+    font-weight: 800;
+  }
+}
 
 @media (min-width: 1024px) {
   .headquarter > div > div > img {
@@ -145,9 +146,7 @@ footer {
     height: 100px;
     border-radius: 50%;
   }
-  .navbar > nav {
-    display: flex;
-  }
+
   .action div {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
