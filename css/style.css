@@ -50,7 +50,7 @@ body {
 
 /* Hero */
 .hero {
-  background-image: url("/hero.jpg");
+  background-image: url("./hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -133,11 +133,11 @@ footer {
   background-color: blueviolet;
 }
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
 }
 
 @media (min-width: 768px) {
-}
+} */
 
 @media (min-width: 1024px) {
   .headquarter > div > div > img {
@@ -157,5 +157,5 @@ footer {
   }
 }
 
-@media (min-width: 1280px) {
-}
+/* @media (min-width: 1280px) {
+} */
