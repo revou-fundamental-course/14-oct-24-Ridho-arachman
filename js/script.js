@@ -1,4 +1,3 @@
-const namaUser = prompt("Masukkan Nama Anda");
 const message = document.querySelector(".action > div > form");
 const nama = document.querySelector(".action > div > form > input[type=text]");
 const tanggalLahir = document.querySelector(
@@ -8,7 +7,10 @@ const text = document.querySelector(".action > div > form > textarea");
 const messageReadOnly = document.querySelector(".action > div > textarea");
 const hero = document.querySelector(".hero > div >h1");
 
-hero.innerHTML = `Hi ${namaUser}, Welcome To Website`;
+document.addEventListener("DOMContentLoaded", () => {
+  const namaUser = prompt("Masukkan Nama Anda");
+  hero.innerHTML = `Hi ${namaUser}, Welcome To Website`;
+});
 
 message.addEventListener("submit", (e) => {
   e.preventDefault();
